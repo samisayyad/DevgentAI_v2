@@ -308,11 +308,6 @@ export default function LandingPage() {
       <section id="contact" className="relative py-16 bg-black px-6 md:px-0 z-10">
         <Contect />
       </section>
-
-      {/* Footer */}
-      <footer className="relative py-8 bg-black text-white text-center z-10">
-        <p>© 2024 Devgent AI. All rights reserved.</p>
-      </footer>
     </div>
   );
 }

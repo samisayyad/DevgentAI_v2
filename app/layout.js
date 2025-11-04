@@ -5,6 +5,7 @@ import {
 } from '@clerk/nextjs'
 import { Toaster } from "@/components/ui/sonner"
 import { ThemeProvider } from "@/components/ThemeProvider.tsx"
+import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,7 +26,12 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <div className="flex flex-col min-h-screen">
+              <main className="flex-1">
+                {children}
+              </main>
+              <Footer />
+            </div>
           </ThemeProvider>
           </body>
       </html>
