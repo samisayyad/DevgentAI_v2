@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone',
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: ['ui.aceternity.com', 'assets.aceternity.com'],
+  },
 };
 
 export default nextConfig;
